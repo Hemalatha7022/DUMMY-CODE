@@ -22,5 +22,6 @@ ele2=driver.find_element("xpath","//a[.='Airline']")
 driver.execute_script("arguments[0].scrollIntoView();", ele2)
 driver.find_element("xpath","(//input[@type='checkbox'])[1]").click()
 
-
+driver.execute_script("arguments[0].scrollIntoView();", ele2)
+driver.find_element("xpath","(//input[@type='checkbox'])[1]").click()
 
