@@ -7,6 +7,7 @@ driver=Chrome(options=o)
 driver.get("https://frontend-service-bjc4nbo65a-uc.a.run.app/")
 driver.maximize_window()
 driver.implicitly_wait(20)
+driver=Chrome(options=o)
 driver.find_element("id","username").send_keys("cemsadmin@delfers.com")
 driver.find_element("id","password").send_keys("1234")
 driver.find_element("xpath","//button[@type='submit']").click()
@@ -20,7 +21,6 @@ driver.find_element("xpath","//div[.='Headache']").click()
 ele2=driver.find_element("xpath","//a[.='Airline']")
 driver.execute_script("arguments[0].scrollIntoView();", ele2)
 driver.find_element("xpath","(//input[@type='checkbox'])[1]").click()
-
 
 
 
